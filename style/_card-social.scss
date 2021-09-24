@@ -1,0 +1,106 @@
+$complementary: #faa925;
+$glass: rgba(255, 255, 255, 0.15);
+$poppins: "Poppins",
+sans-serif;
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-social {
+    @include flex-align;
+    border-radius: 3.5rem 3.5rem 0 0;
+    background-color: $glass;
+    box-shadow: 5px 5px 15px $glass;
+    margin: 10px 100px 30px;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.9s ease;
+    figure {
+        margin: 0;
+    }
+    #profile-picture {
+        width: 80%;
+        max-width: 400px;
+        border-radius: 50%;
+        margin: 1rem;
+        padding: 0.2rem;
+        box-shadow: 5px 5px 8px 8px white inset;
+    }
+    .card-titles {
+        @include flex-align;
+        flex-direction: column;
+        & h1,
+        h3 {
+            font-family: $poppins;
+        }
+    }
+    .card-disc {
+        @include flex-align;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        p {
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            text-shadow: 5px 5px 5px black;
+            line-height: 2;
+            margin: 1rem 2rem;
+        }
+        .show-desc {
+            transform: scale(0);
+            visibility: hidden;
+            p {
+                font-size: 1.8vw;
+                margin-top: 20px;
+            }
+        }
+        hr {
+            transform: scaleX(1);
+        }
+        & .logo {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img {
+                width: 60%;
+            }
+        }
+    }
+    .information-plus {
+        font-family: "Poppins", sans-serif;
+        font-size: 2vw;
+        font-weight: 700;
+        margin: 1.5rem 0;
+        padding: 5px 20px;
+        background-color: $complementary;
+        border: none;
+        border-radius: 5%;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 0.8;
+        width: 80%;
+        &:hover {
+            background-color: $complementary;
+            opacity: 1;
+            transition: 0.3s;
+        }
+    }
+    &:hover .show-desc {
+        visibility: visible;
+        transform: scale(0.9) translateY(0);
+        transition: 0.4s;
+        & hr {
+            border: 1px solid black;
+            transition-delay: 0.9s;
+            transition: 0.9s;
+            transform: scale(1);
+        }
+    }
+}

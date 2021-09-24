@@ -1,0 +1,124 @@
+@mixin media-small {
+    @media (max-width: 700px) {
+        .card-social {
+            order: -1;
+            height: 80%;
+            margin: 82px 25px 0;
+            border-radius: 2.5rem 2.5rem 0 0;
+            #profile-picture {
+                width: 85%;
+            }
+            & .card-titles {
+                font-size: 3.5vw;
+            }
+            & .card-disc {
+                & p {
+                    text-align: center;
+                    font-size: 4vw;
+                    color: white;
+                    text-shadow: 0px 0px 0px black;
+                    line-height: 2;
+                }
+                & .show-desc,
+                .information-plus {
+                    display: none;
+                    font-size: 4vw;
+                }
+                & .logo img {
+                    width: 50vw;
+                }
+            }
+        }
+        & .personal-information {
+            & ul li {
+                font-size: 1rem;
+            }
+        }
+        .panels-information ul li a {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            padding: 10px 10px;
+        }
+        .social-media {
+            margin-top: 0;
+            order: 0;
+            & .links {
+                margin-top: 1rem;
+                & i {
+                    font-size: 2.5rem;
+                }
+                & a {
+                    margin: 0.5rem 1.65rem;
+                }
+            }
+        }
+        .types-panel {
+            & #insurance-types-title {
+                margin: 4rem 1rem 1rem;
+            }
+            & .card-insurance .card {
+                & .card-title {
+                    font-size: 4.5vw;
+                    & h3 {
+                        color: #fff;
+                        text-shadow: 5px 5px 5px black;
+                        text-align: center;
+                    }
+                }
+                & .card-insurance-points {
+                    text-align: center;
+                    font-size: 4.5vw;
+                    letter-spacing: 0.1rem;
+                }
+            }
+            .card-risk {
+                width: 100vw !important;
+                flex-basis: 100%;
+            }
+            .card-risk-name {
+                font-size: 1rem !important;
+            }
+            footer {
+                padding: 0.8rem;
+                & h3 {
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                }
+                & .companies-blocks {
+                    justify-content: space-around;
+                    & .company-block {
+                        justify-content: center;
+                        & .company-logo img {
+                            width: 50%;
+                        }
+                    }
+                    & :last-child {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+        .functions-panel {
+            & .card-functions .card-functions-title {
+                padding: 1rem 0.5rem;
+                margin-top: 4rem;
+            }
+        }
+        .assets-panel {
+            & .assets-risks {
+                & .card-risk {
+                    width: 100vw;
+                    & .card-risk-name {
+                        margin: 0;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

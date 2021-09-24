@@ -1,0 +1,830 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, #000780 99.8%);
+}
+
+.card-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3.5rem 3.5rem 0 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.15);
+          box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.15);
+  margin: 10px 100px 30px;
+  height: 100%;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.card-social figure {
+  margin: 0;
+}
+
+.card-social #profile-picture {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 0.2rem;
+  -webkit-box-shadow: 5px 5px 8px 8px white inset;
+          box-shadow: 5px 5px 8px 8px white inset;
+}
+
+.card-social .card-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-social .card-titles h1,
+.card-social .card-titles h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.card-social .card-disc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card-social .card-disc p {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+  line-height: 2;
+  margin: 1rem 2rem;
+}
+
+.card-social .card-disc .show-desc {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  visibility: hidden;
+}
+
+.card-social .card-disc .show-desc p {
+  font-size: 1.8vw;
+  margin-top: 20px;
+}
+
+.card-social .card-disc hr {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.card-social .card-disc .logo {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-social .card-disc .logo img {
+  width: 60%;
+}
+
+.card-social .information-plus {
+  font-family: "Poppins", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  margin: 1.5rem 0;
+  padding: 5px 20px;
+  background-color: #faa925;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+  width: 80%;
+}
+
+.card-social .information-plus:hover {
+  background-color: #faa925;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-social:hover .show-desc {
+  visibility: visible;
+  -webkit-transform: scale(0.9) translateY(0);
+          transform: scale(0.9) translateY(0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card-social:hover .show-desc hr {
+  border: 1px solid black;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.social-media .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 1rem 1rem;
+}
+
+.social-media .links i {
+  font-size: 3.5rem;
+}
+
+.social-media .links a {
+  float: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5rem 4.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  padding: 0.5rem 1rem;
+  border-top: 0.4rem solid black;
+  background-color: #c7ddf3;
+  -webkit-box-shadow: 0px 0 30px black;
+          box-shadow: 0px 0 30px black;
+  width: 100%;
+}
+
+footer h3 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 1.5rem;
+  color: black;
+  text-shadow: none;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+footer .companies-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .companies-blocks .companies-slogan {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+footer .companies-blocks .company-block {
+  margin-top: 2.5rem;
+}
+
+footer .companies-blocks .company-block .company-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.8rem;
+}
+
+footer .companies-blocks .company-block .company-name {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+footer .companies-blocks .company-block .company-name span {
+  font-weight: 700;
+}
+
+.personal-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FAAB25;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.personal-information h1 {
+  margin: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.personal-information ul {
+  list-style-type: none;
+  padding: 0.5rem 2rem 1rem;
+}
+
+.personal-information ul li {
+  font-size: 1.3rem;
+  padding: 5px 0;
+  text-align: justify;
+}
+
+.personal-information ul li .title {
+  letter-spacing: 0.1rem;
+  display: block;
+  font-weight: 700;
+}
+
+.functions-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: cornflowerblue;
+  padding: 1.5rem 0.5rem;
+  -webkit-box-shadow: 0px 0 30px black;
+          box-shadow: 0px 0 30px black;
+  border-top: 0.3rem solid #000;
+}
+
+.functions-panel .card-functions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.functions-panel .card-functions .card-functions-title {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  line-height: 1.2;
+  padding: 3.5rem 2.5rem 1.5rem;
+}
+
+.functions-panel .card-functions .card-functions-points {
+  padding: 1.5rem 2.5rem;
+}
+
+.functions-panel .card-functions .card-functions-points ul {
+  list-style-type: none;
+  text-align: justify;
+}
+
+.functions-panel .card-functions .card-functions-points ul li {
+  line-height: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.4rem;
+  border-bottom: 0.3rem solid black;
+}
+
+.second-card {
+  width: 100%;
+}
+
+.second-card .panels-information {
+  background-color: #0d5dad;
+  border: 1px solid white;
+  border-top-right-radius: 50px;
+  width: 100%;
+}
+
+.second-card .panels-information ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.second-card .panels-information ul li {
+  float: left;
+}
+
+.second-card .panels-information ul li i {
+  color: #fff;
+}
+
+.second-card .panels-information ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+}
+
+.second-card .panels-information ul li a:hover {
+  color: black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #ad6d00;
+}
+
+.types-panel {
+  -webkit-box-shadow: 0px 0 30px black;
+          box-shadow: 0px 0 30px black;
+  border-top: 0.3rem solid #000;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #FAA719;
+  padding: 1rem 0.5rem;
+}
+
+.types-panel #insurance-types-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  text-align: center;
+  margin: 6rem 1rem 1rem;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+}
+
+.types-panel .card-insurance {
+  min-width: 75vw;
+  margin: 0.5rem 1.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.types-panel .card-insurance .card {
+  -webkit-box-shadow: 9px 15px 14px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 9px 15px 14px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 10px 10px;
+}
+
+.types-panel .card-insurance .card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  border-radius: 10px 10px 0 0;
+  background: #0d5dad;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.types-panel .card-insurance .card-title h3 {
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+}
+
+.types-panel .card-insurance .card-insurance-points {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5vw;
+  line-height: 1.2;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  background: #2d93fa;
+}
+
+.types-panel .card-insurance .card-insurance-points ul {
+  list-style-type: none;
+}
+
+.types-panel .card-insurance .card-insurance-points ul li {
+  font-weight: 700;
+  padding: 0.8rem 0.2rem;
+}
+
+.panels-information {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.panels-information ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.panels-information ul li {
+  float: left;
+}
+
+.panels-information ul li i {
+  color: #fff;
+}
+
+.panels-information ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 0.9rem;
+  border-top-right-radius: 5px;
+}
+
+.panels-information ul li a:hover {
+  color: black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background-color: #ad6d00;
+}
+
+.assets-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #faa719;
+  padding: 1.5rem 0.5rem;
+  -webkit-box-shadow: 0px 0 30px black;
+          box-shadow: 0px 0 30px black;
+  border-top: 0.3rem solid #000;
+}
+
+.assets-panel .assets-risks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.assets-panel .assets-risks .card-functions-title {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 4.5rem 1.5rem 1rem;
+}
+
+.assets-panel .assets-risks .card-risk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  outline: none;
+  -webkit-box-shadow: 0 10px 20px #000;
+          box-shadow: 0 10px 20px #000;
+  margin: 1rem;
+  width: 100vw;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #2d93fa;
+}
+
+.assets-panel .assets-risks .card-risk .card-risk-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  max-width: 40%;
+  height: auto;
+  padding: 0 0.8rem;
+}
+
+.assets-panel .assets-risks .card-risk .card-risk-image img {
+  width: 120px;
+}
+
+.assets-panel .assets-risks .card-risk .card-risk-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0.8rem;
+  font-size: 5vw;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+}
+
+.assets-panel .assets-risks .card-risk:last-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.assets-panel .assets-risks .card-risk:last-child #colisiones {
+  font-size: 4vw;
+}
+
+@media (max-width: 700px) {
+  .card-social {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: 80%;
+    margin: 82px 25px 0;
+    border-radius: 2.5rem 2.5rem 0 0;
+  }
+  .card-social #profile-picture {
+    width: 85%;
+  }
+  .card-social .card-titles {
+    font-size: 3.5vw;
+  }
+  .card-social .card-disc p {
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    text-shadow: 0px 0px 0px black;
+    line-height: 2;
+  }
+  .card-social .card-disc .show-desc,
+  .card-social .card-disc .information-plus {
+    display: none;
+    font-size: 4vw;
+  }
+  .card-social .card-disc .logo img {
+    width: 50vw;
+  }
+  .personal-information ul li {
+    font-size: 1rem;
+  }
+  .panels-information ul li a {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 10px 10px;
+  }
+  .social-media {
+    margin-top: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .social-media .links {
+    margin-top: 1rem;
+  }
+  .social-media .links i {
+    font-size: 2.5rem;
+  }
+  .social-media .links a {
+    margin: 0.5rem 1.65rem;
+  }
+  .types-panel #insurance-types-title {
+    margin: 4rem 1rem 1rem;
+  }
+  .types-panel .card-insurance .card .card-title {
+    font-size: 4.5vw;
+  }
+  .types-panel .card-insurance .card .card-title h3 {
+    color: #fff;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+  }
+  .types-panel .card-insurance .card .card-insurance-points {
+    text-align: center;
+    font-size: 4.5vw;
+    letter-spacing: 0.1rem;
+  }
+  .types-panel .card-risk {
+    width: 100vw !important;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .types-panel .card-risk-name {
+    font-size: 1rem !important;
+  }
+  .types-panel footer {
+    padding: 0.8rem;
+  }
+  .types-panel footer h3 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  .types-panel footer .companies-blocks {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .types-panel footer .companies-blocks .company-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .types-panel footer .companies-blocks .company-block .company-logo img {
+    width: 50%;
+  }
+  .types-panel footer .companies-blocks :last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .functions-panel .card-functions .card-functions-title {
+    padding: 1rem 0.5rem;
+    margin-top: 4rem;
+  }
+  .assets-panel .assets-risks .card-risk {
+    width: 100vw;
+  }
+  .assets-panel .assets-risks .card-risk .card-risk-name {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

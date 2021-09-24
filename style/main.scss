@@ -1,0 +1,23 @@
+@import "./general";
+@import "./card-social";
+@import "./mediaq";
+@import "./nav-social";
+@import "./footer";
+@import "./personal-information";
+@import "./functions-panel";
+@import "./second-card";
+@import "./types-panel";
+@import "./panels-information";
+@import "./assets-panel";
+@include media-small;
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    @include flex;
+    height: auto;
+    width: 100%;
+}

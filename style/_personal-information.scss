@@ -1,0 +1,36 @@
+$primary: #FAAB25;
+$font: "Poppins",
+sans-serif;
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.personal-information {
+    @include flexbox;
+    background-color: $primary;
+    font-family: $font;
+    height: 100vh;
+    & h1 {
+        margin: 1rem;
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 5px 5px 5px black;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0.5rem 2rem 1rem;
+        & li {
+            font-size: 1.3rem;
+            padding: 5px 0;
+            text-align: justify;
+            & .title {
+                letter-spacing: 0.1rem;
+                display: block;
+                font-weight: 700;
+            }
+        }
+    }
+}

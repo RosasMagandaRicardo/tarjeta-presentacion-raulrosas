@@ -1,0 +1,49 @@
+$nav-color: #0d5dad;
+$text-color: #fff;
+$font: "Poppins",
+sans-serif;
+$hover-a: #ad6d00;
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-card {
+    width: 100%;
+    & .panels-information {
+        background-color: $nav-color;
+        border: 1px solid white;
+        border-top-right-radius: 50px;
+        width: 100%;
+        & ul {
+            @include flexbox;
+            list-style-type: none;
+            color: $text-color;
+            font-family: $font;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            & li {
+                float: left;
+                & i {
+                    color: $text-color;
+                }
+                & a {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 14px 16px;
+                    color: $text-color;
+                    font-size: 15px;
+                    border-top-right-radius: 5px;
+                    &:hover {
+                        color: black;
+                        transition: 0.1s;
+                        background-color: $hover-a;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+$primary: rgba(37, 145, 251, 0.98);
+$secondary: #c7ddf3;
+$font-poppins: "Poppins",
+sans-serif;
+@mixin display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    padding: 0.5rem 1rem;
+    border-top: 0.4rem solid black;
+    background-color: $secondary;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 1);
+    width: 100%;
+    & h3 {
+        text-align: center;
+        font-family: $font-poppins;
+        padding-top: 1.5rem;
+        color: black;
+        text-shadow: none;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+    & .companies-blocks {
+        @include display-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        & .companies-slogan {
+            flex-basis: 100%;
+        }
+        & .company-block {
+            margin-top: 2.5rem;
+            & .company-logo {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 0.8rem;
+            }
+            & .company-name {
+                font-family: $font-poppins;
+                text-align: center;
+                & span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.panels-information {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    & ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        color: $text-color;
+        font-family: $font;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        & li {
+            float: left;
+            & i {
+                color: $text-color;
+            }
+            & a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                padding: 14px 16px;
+                color: $text-color;
+                font-size: 0.9rem;
+                border-top-right-radius: 5px;
+                &:hover {
+                    color: black;
+                    transition: 0.1s;
+                    background-color: $hover-a;
+                }
+            }
+        }
+    }
+}
