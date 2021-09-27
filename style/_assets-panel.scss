@@ -29,6 +29,8 @@ sans-serif;
         width: 100%;
         align-items: center;
         & .card-functions-title {
+            @include style-font;
+            font-size: 2.5rem;
             font-family: $font-poppins;
             color: #fff;
             text-shadow: 5px 5px 5px black;
@@ -41,7 +43,7 @@ sans-serif;
             justify-content: space-around;
             outline: none;
             box-shadow: 0 10px 20px #000;
-            margin: 1rem;
+            margin: 1.5rem;
             width: 100vw;
             padding: 1.5rem;
             border-radius: 1rem;
@@ -55,7 +57,7 @@ sans-serif;
                 height: auto;
                 padding: 0 0.8rem;
                 & img {
-                    width: 120px;
+                    width: 200px;
                 }
             }
             & .card-risk-name {
@@ -65,7 +67,7 @@ sans-serif;
                 text-align: center;
                 font-weight: 700;
                 margin: 0 0.8rem;
-                font-size: 5vw;
+                font-size: 5rem;
                 font-family: $font-poppins;
                 color: #fff;
                 text-shadow: 5px 5px 5px #000;
